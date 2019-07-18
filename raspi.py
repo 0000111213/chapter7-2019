@@ -14,7 +14,7 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "/home/pi/meister7-2019.json"
 
 cred = credentials.Certificate('/home/pi/meister7-2019.json')
 firebase_admin.initialize_app(cred)
-i2c = smbus.SMBus(1)
+#i2c = smbus.SMBus(1)
 address = 0x48
 
 GPIO.setmode(GPIO.BCM)
