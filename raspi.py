@@ -36,7 +36,7 @@ def on_snapshot(doc_snapshot, changes, read_time):
             print "ON"
             # ONにする処理
             GPIO.output(14, GPIO.HIGH)
-        elif led == "OFF"
+        elif led == "OFF":
             print "OFF"
             # OFFにする処理
             GPIO.output(14, GPIO.LOW)
