@@ -18,7 +18,19 @@
     var ctx = document.getElementById("tempchart");
     
     // TODO:0 ここに設定を入れる
-
+    var firebaseConfig = {
+    apiKey: "AIzaSyD979xaxfqkg4TXFP2C1yrgr77hGYAA6bo",
+    authDomain: "ch7777-f543d.firebaseapp.com",
+    databaseURL: "https://ch7777-f543d.firebaseio.com",
+    projectId: "ch7777-f543d",
+    storageBucket: "ch7777-f543d.appspot.com",
+    messagingSenderId: "4155479037",
+    appId: "1:4155479037:web:13aec7c41524d7ac"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
     var db = firebase.firestore()
     var initialData=[];

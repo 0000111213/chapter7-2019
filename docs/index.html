@@ -25,7 +25,17 @@
         </div>
         <script>
             // TODO0 ここに設定情報を貼り付ける  
-            
+            var firebaseConfig = {
+    apiKey: "AIzaSyD979xaxfqkg4TXFP2C1yrgr77hGYAA6bo",
+    authDomain: "ch7777-f543d.firebaseapp.com",
+    databaseURL: "https://ch7777-f543d.firebaseio.com",
+    projectId: "ch7777-f543d",
+    storageBucket: "ch7777-f543d.appspot.com",
+    messagingSenderId: "4155479037",
+    appId: "1:4155479037:web:13aec7c41524d7ac"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
             // データベースの参照を準備
             var ledRef = firebase.firestore().collection('led')
         
@@ -33,9 +43,15 @@
             
             $('#led-on').click(function() {
 		    // {led: "ON"}を送信
+		    ledRef.add({
+		    	led: "ON"
+		    });	
             });
             $('#led-off').click(function() {
 		    // {led: "OFF"}を送信
+		    ledRef.add({
+		    	led: "OFF"
+		    });
             });
 
         </script>
